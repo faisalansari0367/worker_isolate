@@ -11,30 +11,19 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Long running isolate to keep the heavy work off from UI thread.
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+final worker = Worker();
+final result = await worker.compute(jsonDecode, jsonString);
+
 ```
 
 ## Additional information
 
-To use this package simply do this.
-final worker = Worker();
-final result = await worker.compute(function, parameter);
+You can use this package to decodeJson, parseJson, for base64Decoding and encoding and so on.
+this package will help you to achieve more smooth ui because it will handle all the heavy work in the background.
 
