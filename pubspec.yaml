@@ -1,10 +1,10 @@
 name: worker_isolate
 description: A long running isolate to do heavy work load.
 version: 0.0.1
-homepage:
+repository: https://github.com/faisalansari0367/worker_isolate.git
 
 environment:
-  sdk: ">=2.5.2"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
